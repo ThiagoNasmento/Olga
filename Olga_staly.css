@@ -1,0 +1,71 @@
+body {
+	background-color: #000000;
+}
+
+nav img{
+	margin: 2px;
+}
+.saudação{
+	text-align: center;
+	margin-top: calc(100% - 84%);
+	color: rgb(102,102,102); 
+}
+.circle{
+	background: #000000;
+	border-radius: 100%;
+	cursor: pointer;
+	width: 240px;
+	height: 240px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.circle h1{
+	color: rgba(126,217,87,0);
+	font-family: "agency FB";
+	font-weight: 900;
+	font-size: 30px;
+	line-height: 220px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: color 1s;
+	z-index: 9999;
+}
+
+.circle:before{
+	content: "";
+	border-radius: 100%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 240px;
+	height: 240px;
+	margin: 0 auto;
+	box-shadow: inset 60px 0 0 rgba(0,100,0,0.5)
+			,	inset 0 60px 0 rgba(0,100,0,0.5)
+			,	inset -60px 0 0 rgba(0,100,0,0.5)
+			,	inset 0 -60px 0 rgba(0,100,0,0.5)
+				;
+	transition: box-shadow 0.8s;	
+}
+
+.circle:hover:before{
+	box-shadow: inset 15px 0 0 rgba(255,0,0,0.5)
+			,	inset 0 15px 0 rgba(255,150,0,0.5)
+			,	inset -15px 0 0 rgba(0,255,0,0.5)
+			,	inset 0 -15px 0 rgba(0,155,255,0.5)
+				;
+	
+}
+
+.circle:hover h1{
+	color: rgba(126,217,87,1);
+}
+
+#rodape p{
+	margin: 0px; 
+	margin-top: 280px;
+	text-align: center;
+	height: 0px;
+}
